@@ -24,13 +24,11 @@ if($task == "edit" || $layout == "form" )
 	$fullWidth = 1;
 }
 else
-	
 {
 	$fullWidth = 0;
 }
 
 // Add JavaScript Frameworks
-
 JHtml::_('bootstrap.framework');
 
 ?>
