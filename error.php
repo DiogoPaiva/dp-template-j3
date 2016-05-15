@@ -30,7 +30,7 @@ else
 }
 
 // Add JavaScript Frameworks
-// qq
+
 JHtml::_('bootstrap.framework');
 
 ?>
