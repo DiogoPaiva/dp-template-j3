@@ -1,0 +1,1108 @@
+/*
+CORES
+Preto (quase Preto) : #1b1618 /// Menu; Titulos a Positivo; Fundo geral; rodap�
+Amarelo (imitar o ouro) : #af8d38  /// Menu Active; menu Over; Subtitulos
+Cinza (quase Branco) : #bdc1c3  /// Texto normal (quando com fundos)
+Branco : #FFFFFF  /// Titulos (quando com fundos)
+
+Cinza (normal) : #666666  /// Texto normal (com fundo branco)
+Cinza (Claro) : #a8a6a6  /// outros: botoes, etc.. (com fundo branco)
+*/
+
+.roboto300 {font-family: 'Roboto', sans-serif; font-weight:300;}
+.roboto500 {font-family: 'Roboto', sans-serif; font-weight:500;}
+.roboto700 {font-family: 'Roboto Condensed', sans-serif; font-weight:700;}
+.neuton300{font-family: 'Cinzel', serif;font-weight:300;}
+.neuton500{font-family: 'Cinzel', serif;font-weight:500;}
+.neuton700{font-family: 'Cinzel', serif;font-weight:700;}
+
+.preto {color:#1b1618;}
+.dourado {color: #af8d38; }
+.upper{text-transform:uppercase;}
+.anim02 {-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;}
+
+/*DEFAULT*/
+html, body { min-height: 100%;width:100%;font-family:'Roboto', Arial, Helvetica, tahoma, verdana, SimSun, STXihei, sans-serif; font-weight:300; padding:0; color: #666;}
+body.site.fluid{background-color:#ffffff;}
+.body {height:100%;width:100%;/*max-width: 1320px;*/ margin: 0 auto;position:relative;}
+.full-header { width: 100%; height: 75px; background: transparent;position: relative;}
+.full-banner {width: 100%;max-height: 450px; position: relative;}
+.tbl { display: table;}
+.tblcell { display: table-cell; vertical-align: middle;}
+a {color:#af8d38;}
+.centro {background-color:#f1f1f1;}
+.article-info-term {display: none!important;}
+.mapprint {display: none;}
+/*HOMEPAGE*/
+.full-header #logo {display: block;height: 100%;position: absolute;width: 100%;}
+.logoheader  .logo-png{  display: block;max-width:382px;height: auto;}
+.homepage nav.navigation{ display:none;}
+.menu { width: auto; height: 100%;}
+.menu_principal { display: block;float: right;margin-left: 0;width: 65%;}
+.modulo_topo { display: block;width: 100%;}
+.logoheader { display: block;height: 80px;left: 0;position: absolute;top:0;width:31%;z-index: 12;}
+.header-container {  height: 100%; width: 100%;max-width:1200px;margin:0 auto; position:relative;}
+.small .centro,
+.mobile .centro,
+.large .centro,
+.normal .centro {max-width: 100%; margin:0 auto;}
+.homepage .container {background:none!important;padding:0!important; border:none!important; box-shadow:none!important;max-width:1200px!important;}
+
+/*SLIDER HOMEPAGE*/
+.homepage .full-width-banner .moduletable .slider_conteudos .bx-wrapper .bx-viewport,
+.homepage .full-width-banner .moduletable .slider_conteudos .bx-wrapper,
+.homepage .full-width-banner .moduletable .slider_conteudos, 
+.homepage .full-width-banner .moduletable{ display: block;height: 0;padding-bottom: 35%;width: 100%;}
+.homepage .full-width-banner {height: 0; padding-bottom: 35%; width: 100%; position: relative; z-index:0; }
+.homepage .full-width-banner #slider .bx-wrapper,
+.homepage .full-width-banner #slider,
+.homepage .full-width-banner #slider li.slider-item {height: 0; padding-bottom: 35%;width:100%;margin:0;background-size: cover;}
+.homepage .full-width-banner .bx-controls {display:none;}
+.homepage .full-width-banner .setas-area {display: block;left: 0;margin: auto;max-width: 1420px;position: absolute;right: 0;top: 50%;width: 100%;z-index: 61;}
+.homepage .full-width-banner .wrapper-slide {display: block;margin: 0 auto;max-width: 1320px;padding-bottom: 32%;position: relative;width: 100%;}
+.small.homepage .full-width-banner .wrapper-slide {padding-bottom: 35%;}
+.homepage .full-width-banner .setas-area .seta-prev{ height: 51px; left: 5%;   position: absolute;}
+.homepage .full-width-banner .setas-area .seta-next{ height: 51px;right: 5%;   position: absolute;}
+.homepage .full-width-banner .setas-area .seta-next .bx-next { background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -38px -85px;
+cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;}
+.homepage .full-width-banner .setas-area .seta-prev .bx-prev {background: rgba(0,0,0,0)url("../images/sprite.png") no-repeat scroll -6px -85px;cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;}
+.normal.homepage .full-width-banner .slide-desc { width: 50%;}
+.small.homepage .full-width-banner .slide-desc { bottom: 0;height: 31%;margin: auto auto auto 87px;top: 0; width: 61%;}
+.small.homepage .full-width-banner .slide-desc .slide-text { font-size: 28px;line-height: 28px;}
+.small .destk-mod ul.destaques-homepage li .destaques-inner .texto-area h4 {font-size: 24px;}
+.homepage .full-width-banner .slide-desc { pointer-events: none;display: block;height: 160px;margin-left: 10%;max-width: 600px;padding-left: 20px;position: absolute;text-align: left;
+text-shadow: 2px 1px 2px rgba(0, 0, 0, 1);top: 48%;width: 35%;z-index: 4;}
+.homepage .full-width-banner .image-link { display: block;height: 0;padding-bottom: 35%;position: absolute;width: 100%;z-index: 50;}
+.homepage .full-width-banner .slide-desc .slide-title {color: #fff;text-shadow: 2px 1px 18px rgba(0,0,0,1);font-size: 45px;line-height: 45px;margin-bottom: 13px;max-width: 550px;}
+.homepage .full-width-banner .slide-desc .slide-text {color: #fff;font-family: "Cinzel",serif;font-size: 36px;font-weight: 500;letter-spacing: 1px;line-height: 40px; text-transform: uppercase;}
+.homepage .full-width-banner > .moduletable #slider li.slider-item .slide-desc a.readmore {display:none;}
+.homepage .full-width-banner > .moduletable #slider li.slider-item .slide-desc a.readmore:hover{background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -92px -50px;text-decoration: none;}
+.homepage .full-width-banner > .moduletable #slider li.slider-item.activo .slide-desc a.readmore {
+animation: readmore linear 1.4s;animation-iteration-count: 1;transform-origin: 50% 50%;animation-fill-mode: forwards;
+-webkit-animation: readmore linear 1.4s;-webkit-animation-iteration-count: 1;-webkit-transform-origin: 50% 50%;-webkit-animation-fill-mode:forwards; 
+-moz-animation: readmore linear 1.4s;-moz-animation-iteration-count: 1;-moz-transform-origin: 50% 50%;-moz-animation-fill-mode:forwards; 
+-o-animation: readmore linear 1.4s;-o-animation-iteration-count: 1;-o-transform-origin: 50% 50%;-o-animation-fill-mode:forwards; }
+.homepage .full-width-banner > .moduletable #slider li.slider-item .slide-desc .slide-text {display: block;top: 0;position: relative;opacity: 0;-webkit-animation-delay: 0.2s;-moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;animation-delay: 0.2s;}
+.homepage .full-width-banner > .moduletable #slider li.slider-item .slide-desc{-webkit-animation-delay: 0.2s; animation-delay: 0.2s;}
+.homepage .full-width-banner #navegacao { position: absolute; width: 100%; height: 25px; bottom:10%;z-index: 100;}
+.homepage .full-width-banner #navegacao .bx-pager {display: block; text-align: center;}
+.homepage .full-width-banner #navegacao .bx-pager .bx-pager-item { vertical-align: top; display:inline-block; height: 15px; width: 15px; margin-right: 2px ; margin-left: 2px;}
+.homepage .full-width-banner #navegacao .bx-pager .bx-pager-item .bx-pager-link.active {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -28px -2px;opacity: 1;}
+.homepage .full-width-banner #navegacao .bx-pager .bx-pager-item .bx-pager-link {
+-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;opacity: 0.65;background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -2px -2px; cursor: pointer; display: block; width: 20px; height: 20px; text-indent: -10000px; overflow: hidden;}
+.mobile .footer,
+.small .footer {padding-bottom: 0;}
+.small .conteudos .bloco-central .artigo { padding-top: 20px; padding-bottom: 20px;}
+.small .vinho-show .inner-vinho > .navegacao { width:96%;}
+.small .vinho-show .right-block .navegacao {right: -10px;}
+.small .conteudos .bloco-central .artigo,
+.mobile .conteudos .bloco-central .artigo { width: 98%; margin:0 auto;}
+
+/******* ANIMATION ODD ********/
+/**/
+.homepage .full-width-banner > .moduletable #slider li.slider-item.odd.activo .slide-desc .slide-text{
+animation: descrodd linear 0.8s; animation-iteration-count: 1; transform-origin: 50% 50%; animation-fill-mode:forwards; 
+-webkit-animation: descrodd linear 0.8s;-webkit-animation-iteration-count: 1;-webkit-transform-origin: 50% 50%;-webkit-animation-fill-mode:forwards; 
+-moz-animation: descrodd linear 0.8s;-moz-animation-iteration-count: 1;-moz-transform-origin: 50% 50%;-moz-animation-fill-mode:forwards; 
+-o-animation: descrodd linear 0.8s;-o-animation-iteration-count: 1;-o-transform-origin: 50% 50%;-o-animation-fill-mode:forwards; }
+
+.homepage .full-width-banner > .moduletable #slider li.slider-item.odd.activo .slide-desc{
+animation: animationFramesOdd linear 2s;animation-iteration-count: 1;transform-origin: 50% 50%;animation-fill-mode:forwards; /*when the spec is finished*/
+-webkit-animation: animationFramesOdd linear 2s;-webkit-animation-iteration-count: 1;-webkit-transform-origin: 50% 50%;-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+-moz-animation: animationFramesOdd linear 2s;-moz-animation-iteration-count: 1;-moz-transform-origin: 50% 50%;-moz-animation-fill-mode:forwards; /*FF 5+*/
+-o-animation: animationFramesOdd linear 2s;-o-animation-iteration-count: 1;-o-transform-origin: 50% 50%;-o-animation-fill-mode:forwards; /*Not implemented yet*/
+-ms-animation: animationFramesOdd linear 2s;-ms-animation-iteration-count: 1;-ms-transform-origin: 50% 50%;-ms-animation-fill-mode:forwards; /*IE 10+*/ }
+
+
+@keyframes descrodd{ 0% { opacity:0; transform:  translate(0,0)  ; } 55% {opacity:0; transform:  translate(0,0)  ;} 100% {opacity:1; transform:  translate(0,0)  ;}}
+@-moz-keyframes descrodd{0% {opacity:0;-moz-transform: translate(0,0)  ;}55% {opacity:1;-moz-transform:  translate(0,0)  ;}100% {opacity:1;-moz-transform: translate(0,0)  ;}}
+@-webkit-keyframes descrodd {0% {opacity:0;-webkit-transform: translate(0,0);}55% {opacity:1;-webkit-transform: translate(0,0);}100% {opacity:1;-webkit-transform: translate(0,0);}}
+@-o-keyframes descrodd {0% {opacity:0;-o-transform: translate(0,0) ;}55% {opacity:1;-o-transform: translate(0,0) ;}100% {opacity:1;-o-transform: translate(0,0) ;}}
+@-ms-keyframes descrodd {0% {opacity:0;-ms-transform: translate(0,0);}55% {opacity:1;-ms-transform: translate(0,0);}100% {opacity:1;-ms-transform: translate(0,0);}}
+
+@keyframes animationFramesOdd{ 0% { opacity:0; transform: translate(0,0); } 55% {opacity:1; transform: translate(0,0);} 100% {opacity:1; transform: translate(0,0);}}
+@-moz-keyframes animationFramesOdd{0% {opacity:0;-moz-transform: translate(0,0);} 55% {opacity:1;-moz-transform: translate(0,0);} 100% {opacity:1;-moz-transform: translate(0,0);}}
+@-webkit-keyframes animationFramesOdd {0% {opacity:0;-webkit-transform: translate(0,0)  ;} 55% {opacity:1;-webkit-transform: translate(0,0)  ;} 100% {opacity:1;-webkit-transform: translate(0,0)  ;}}
+@-o-keyframes animationFramesOdd {0% {opacity:0;-o-transform: translate(0,0);} 55% {opacity:1;-o-transform: translate(0,0);} 100% {opacity:1;-o-transform: translate(0,0);}}
+@-ms-keyframes animationFramesOdd {0% {opacity:0;-ms-transform: translate(0,0) ;} 55% {opacity:1;-ms-transform: translate(0,0) ;} 100% {opacity:1;-ms-transform: translate(0,0) ;}}
+
+
+/******* ANIMATION EVEN ********/
+.homepage .full-width-banner > .moduletable #slider li.slider-item.even.activo .slide-desc .slide-text{
+animation: descr linear 0.8s;animation-iteration-count: 1;transform-origin: 50% 50%;animation-fill-mode:forwards; 
+-webkit-animation: descr linear 0.8s;-webkit-animation-iteration-count: 1;-webkit-transform-origin: 50% 50%;-webkit-animation-fill-mode:forwards; 
+-moz-animation: descr linear 0.8s;-moz-animation-iteration-count: 1;-moz-transform-origin: 50% 50%;-moz-animation-fill-mode:forwards; 
+-o-animation: descr linear 0.8s;-o-animation-iteration-count: 1;-o-transform-origin: 50% 50%;-o-animation-fill-mode:forwards; 
+-ms-animation: descr linear 0.8s;-ms-animation-iteration-count: 1;-ms-transform-origin: 50% 50%;-ms-animation-fill-mode:forwards; }
+
+.homepage .full-width-banner > .moduletable #slider li.slider-item.even.activo .slide-desc{
+animation: animationFramesEven linear 2s;animation-iteration-count: 1;transform-origin: 50% 50%;animation-fill-mode:forwards; /*when the spec is finished*/
+-webkit-animation: animationFramesEven linear 2s;-webkit-animation-iteration-count: 1;-webkit-transform-origin: 50% 50%;-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+-moz-animation: animationFramesEven linear 2s;-moz-animation-iteration-count: 1;-moz-transform-origin: 50% 50%;-moz-animation-fill-mode:forwards; /*FF 5+*/
+-o-animation: animationFramesEven linear 2s;-o-animation-iteration-count: 1;-o-transform-origin: 50% 50%;-o-animation-fill-mode:forwards; /*Not implemented yet*/
+-ms-animation: animationFramesEven linear 2s;-ms-animation-iteration-count: 1;-ms-transform-origin: 50% 50%;-ms-animation-fill-mode:forwards; /*IE 10+*/}
+
+@keyframes animationFramesEven{ 0% { opacity:0; transform: translate(0,0); } 55% {opacity:1; transform: translate(0,0);} 100% {opacity:1; transform: translate(0,0);}}
+@-moz-keyframes animationFramesEven{0% {opacity:0;-moz-transform: translate(0,0);} 55% {opacity:1;-moz-transform: translate(0,0);} 100% {opacity:1;-moz-transform: translate(0,0);}}
+@-webkit-keyframes animationFramesEven {0% {opacity:0;-webkit-transform: translate(0,0)  ;} 55% {opacity:1;-webkit-transform: translate(0,0)  ;} 100% {opacity:1;-webkit-transform: translate(0,0)  ;}}
+@-o-keyframes animationFramesEven {0% {opacity:0;-o-transform: translate(0,0);} 55% {opacity:1;-o-transform: translate(0,0);} 100% {opacity:1;-o-transform: translate(0,0);}}
+@-ms-keyframes animationFramesEven {0% {opacity:0;-ms-transform: translate(0,0) ;} 55% {opacity:1;-ms-transform: translate(0,0) ;} 100% {opacity:1;-ms-transform: translate(0,0) ;}}
+
+
+/****** ANIMATION IGUAL *****/
+@keyframes readmore{ 0% { opacity:0; transform:  translate(0px,-40px)  ; }50% {opacity:0; transform:  translate(0px,-10px)  ;}100% {opacity:1; transform:  translate(0px,10px)  ;}}
+@-moz-keyframes readmore{ 0% { opacity:0; -moz-transform:  translate(0px,-40px)  ; }50% {opacity:0; -moz-transform:  translate(0px,-10px)  ;}100% {opacity:1; -moz-transform:  translate(0px,10px)  ;}}
+@-webkit-keyframes readmore{ 0% { opacity:0; -webkit-transform:  translate(0px,-40px)  ; }50% {opacity:0; -webkit-transform:  translate(0px,-10px)  ;}100% {opacity:1; -webkit-transform:  translate(0px,10px)  ;}}
+@-o-keyframes readmore{ 0% { opacity:0; -o-transform:  translate(0px,-40px)  ; }50% {opacity:0; -o-transform:  translate(0px,-10px)  ;}100% {opacity:1; -o-transform:  translate(0px,10px)  ;}}
+@-ms-keyframes readmore{ 0% { opacity:0; -ms-transform:  translate(0px,-40px)  ; }50% {opacity:0; -ms-transform:  translate(0px,-10px)  ;}100% {opacity:1; -ms-transform:  translate(0px,10px)  ;}}
+
+@keyframes descr{ 0% { opacity:0; transform:  translate(0px,0px)  ; }55% {opacity:0; transform:  translate(0px,0px)  ;}100% {opacity:1; transform:  translate(0px,0px)  ;}}
+@-moz-keyframes descr{ 0% { opacity:0; -moz-transform:  translate(0px,0px)  ; }55% {opacity:0; -moz-transform:  translate(0px,0px)  ;}100% {opacity:1; -moz-transform:  translate(0px,0px)  ;}}
+@-webkit-keyframes descr{ 0% { opacity:0; -webkit-transform:  translate(0px,0px)  ; }55% {opacity:0; -webkit-transform:  translate(0px,0px)  ;}100% {opacity:1; -webkit-transform:  translate(0px,0px)  ;}}
+@-o-keyframes descr{ 0% { opacity:0; -o-transform:  translate(0px,0px)  ; }55% {opacity:0; -o-transform:  translate(0px,0px)  ;}100% {opacity:1; -o-transform:  translate(0px,0px)  ;}}
+@-ms-keyframes descr{ 0% { opacity:0; -ms-transform:  translate(0px,0px)  ; }55% {opacity:0; -ms-transform:  translate(0px,0px)  ;}100% {opacity:1; -ms-transform:  translate(0px,0px)  ;}}
+
+
+#tab2 .copyright-text {letter-spacing: 0.3px;color: #666; font-size: 11px;}
+#tab2 .copyright-text a {color: #666;}
+
+.caixas-dir { margin-top: 13px;}
+.list_block_img .block_img {display: block;}
+.list_block_img {display: block; width:160px;}
+.breadcrumb > li { display: inline-block!important;}
+
+#caixas .box1.span100 {width:100%; margin:0; padding:0; position:relative;}
+#caixas {/*max-height:600px;*/ width: 100%;}
+.destk-mod {width:100%;margin:0; padding:0;}
+.destk-mod ul.destaques-homepage {margin:0; padding:0;}
+.destk-mod ul.destaques-homepage li { float: left;  width: 33.333%;display:block; /*height:300px;*/ height:0; padding-bottom:22%; position: relative; overflow:hidden;}
+
+.destk-mod ul.destaques-homepage a.link-block { display: block; position: absolute; width: 100%; height: 100%; z-index:4;}
+.destk-mod ul.destaques-homepage .destaques-inner .img-holder-img { 
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+-ms-transform: scale(1,1);
+-webkit-transform: scale(1,1);
+-moz-transform: scale(1,1);
+-o-transform: scale(1,1);
+transform: scale(1,1);}
+
+.destk-mod ul.destaques-homepage .destaques-inner:hover .img-holder-img {
+-ms-transform: scale(1.15,1.15);
+-webkit-transform: scale(1.15,1.15);
+-moz-transform: scale(1.15,1.15);
+-o-transform: scale(1.15,1.15);
+transform: scale(1.15,1.15);}
+
+.destk-mod ul.destaques-homepage a.link-block:hover .slidermask {opacity:0;}
+.destk-mod ul.destaques-homepage a.link-block:hover .texto-area h4 { text-shadow:1px 1px 2px #000; }
+.destk-mod ul.destaques-homepage .slidermask {
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity:1;background-image: url("../images/bk_fundoslider.png");background-position: center bottom;background-repeat: repeat-x;bottom: 0;  display: block;  height: 100%;  left: 0;  margin: auto;  pointer-events: none;  position: absolute;  right: 0;  width: 100%;  z-index: 3;}
+.small .destk-mod ul.destaques-homepage li .destaques-inner {padding-bottom:68%;}
+.destk-mod ul.destaques-homepage li .destaques-inner{ height: 0;position: relative;width: 100%; padding-bottom:67%;}
+.destk-mod ul.destaques-homepage li .destaques-inner .texto-area{animation-delay: 0.2s;bottom: 0;display: block;height: 26%;left: 0;margin: auto;opacity: 1;pointer-events: none;position: absolute;right: 0;text-align: center;top: 0;
+transform: translate3d(0px, 10px, 10px);transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;width: 80%;z-index: 5;}
+.destk-mod ul.destaques-homepage li .destaques-inner .texto-area h4 {color: #fff;text-shadow:none;display: block;font-family: "Cinzel",serif;font-size: 28px;font-weight: 500;letter-spacing: 2px;line-height: 28px;text-align: center;text-transform: uppercase;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;}
+.row-fluid [class*="span"] {min-height:0!important;}
+.newsflash.marcas-mod { text-align:center;}
+.newsflash.marcas-mod .destaques-inner { display: inline-block; width: auto;}
+
+/*TEMPLATE CONTEUDOS*/
+.navigation.container {max-width: 845px; margin: 0 auto; padding-top: 20px;}
+.conteudos .artigos_list { overflow: hidden;position: relative;z-index: 2;}
+.conteudos .conteudo.container img {border: 0 none;height: 100%;max-width: 100%;vertical-align: middle;width: 100%;}
+.conteudos .conteudo.container .caixa-area:nth-child(2),
+.conteudos .conteudo.container .caixa-area:nth-child(6) { border-left: 2px solid #EDEDED;border-right: 2px solid #EDEDED;}
+.conteudos .conteudo.container .caixa-area { margin-bottom: 10px; width: 33%; float: left; display: block; text-align: center;}
+.conteudos .conteudo.container .caixa-area img{ width:auto; max-width: 100%;}
+.conteudos .conteudo.container .caixa-area h3 {color: #579726;font-size: 18px;letter-spacing: 0;text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.07);text-transform: uppercase;margin-bottom: 15px; margin-top: 15px;}
+.conteudos .conteudo.container .caixa-area ul { padding: 0;margin:0; }
+.conteudos .conteudo.container .caixa-area ul li {color: #666;font-size: 16px;letter-spacing: 0;line-height: 20px;list-style: outside none none;margin-bottom: 2px;}
+.conteudos .conteudo.container .caixa-area a.read-more {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -2px -23px;color: #fff;display: block;font-size: 13px;height: 25px;line-height: 25px;margin: 20px auto 0;text-indent: -11px;text-decoration: none;width: 88px;}
+.conteudos .conteudo.container .caixa-area a.read-more:hover {  background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -92px -23px; text-decoration: none; }
+.conteudos .conteudo.container .descritivo {  margin-bottom: 90px;margin-top: 20px;min-height: 250px;}
+.conteudos .conteudo.container .descritivo ul li {float: left;line-height: 23px;margin-bottom: 4px;width: 33%;}
+.conteudos .conteudo.container .descritivo ul li:nth-child(5n+1) { clear: left; }
+
+/*ARTIGO GERAL - template blogq_somos*/
+.conteudos .blogq_somos { font-size: 15px; line-height: 150%;}
+.conteudos .blogq_somos .leading-0 { padding-top: 22px!important;}
+.conteudos .blogq_somos .texto_principal { color: #666;float: left;width: 70%;font-size: 15px; line-height: 150%;}
+.conteudos .blogq_somos .caixa_slogan { color: #579726; float: right; font-size: 24px; line-height: 28px; margin-left: 3%; width: 27%;}
+
+.conteudos .blogq_somos .items-leading > div { display: block; clear: both;margin-bottom: 20px;border-bottom: 2px solid #eee; padding-top: 25px; padding-bottom: 25px;  }
+.conteudos .blogq_somos .items-leading > div .page-header { border: none;}
+.conteudos .blogq_somos .items-leading > .leading-2 {border-bottom:none;}
+.conteudos .blogq_somos .items-leading > .leading-0,
+.conteudos .blogq_somos .items-leading > .leading-1,
+.conteudos .blogq_somos .items-leading > .leading-2 {max-width: 830px; margin: 0 auto;}
+.conteudos .blogq_somos .items-leading .item-image img {max-width: 63%;}
+.conteudos .bloco-central .redes_sociais {max-width: 265px; margin: 0 auto; padding-bottom: 50px;}
+/*NOTICIAS LISTAGEM*/
+.noticias-listagem.blog {max-width: 1000px; margin:0 auto; width:99%;}
+.noticias-listagem p.readmore { display: block; clear: both;}
+.noticias-listagem p.readmore .btn {background-color: #a8a6a6;border-radius: 7px;color: #fff;display: inline-block;margin-top: 10px;height: 23px;line-height: 23px;padding: 2px;
+text-align: center; text-shadow:none;-moz-transition: all 0.2s ease 0s;-o-transition: all 0.2s ease 0s;-webkit-transition: all 0.2s ease 0s;transition: all 0.2s ease 0s;width: 100px;}
+.noticias-listagem p.readmore .btn > span { font-size: 9px; }
+.noticias-listagem p.readmore .btn:hover {background-color: #666; }
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .article-info > dd {padding:0; margin:0;}
+.noticias-listagem.blog .artigos_list .destaque .page-header h2 a {  font-family: 'Roboto Condensed',sans-serif;
+font-size: 28px!important;font-weight:700;line-height: 38px;text-transform: uppercase;}
+.noticias-listagem.blog .published {font-size:11px;padding-top:10px; padding-bottom: 10px;}
+.noticias-listagem.blog .intro-texto {color: #666;margin: 0 auto;max-width: 650px;padding-bottom: 5%;padding-top: 35px;position: relative;text-align: center;z-index: 3; font-size: 17px;line-height: 22px;}
+.noticias-listagem.blog .artigos_list {margin-bottom:45px;}
+.noticias-listagem.blog .artigos_list .destaque {border-bottom: 1px solid #CFCFCF;color: #666;padding-bottom: 40px;width: 100%;}
+.noticias-listagem.blog .artigos_list .destaque .txt-intro {padding-top: 25px; padding-bottom: 25px; }
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .page-header {margin:0; padding:0;}
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .page-header h2{margin:0; padding:0;}
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .article-info {margin:0; padding:0;}
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .imagem-destaque { float: left;margin-left: 2%;margin-right: 2%;width: 39%;}
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .imagem-destaque img {max-height:300px; display:block; margin: 0 auto;}
+.noticias-listagem.blog .artigos_list .destaque .item-destaque .texto { float: left;font-size: 17px;line-height: 22px;text-align: left;width: 50%;}
+.noticias-listagem.blog .article-info {padding:0; margin:0;}
+.noticias-listagem.blog .artigos_list .item-noticia { color: #666;display: inline-block; float:none; vertical-align: top;margin:2.5% 2.5% 0;width: 43%;}
+.noticias-listagem.blog .artigos_list .item-noticia p{  font-size: 17px; line-height: 22px; }
+.noticias-listagem.blog .artigos_list .item-noticia .conteudo_item .informacao .article-info > dd.published {margin: 0; padding:0; font-size:9px;}
+.noticias-listagem.blog .artigos_list .item-noticia .conteudo_item .informacao .article-info > dd.published .icon-calendar {font-size:9px;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .page-header {margin:0; padding:0;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .page-header h2{margin:0; padding:0;}
+.noticias-listagem.blog .artigos_list .listagem .page-header h2 a {font-size: 22px!important;line-height: 24px!important;font-weight: 500;font-family: "Cinzel",serif; margin-bottom: 10px!important; display: block; }
+.noticias-listagem.blog .intro-texto h1 {margin-bottom:10px;}
+.noticias-listagem.blog .intro-texto .category-desc h2{font-family: "Cinzel",serif;font-size: 38px;font-weight: 500;line-height: 38px;text-transform: uppercase;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .inner-noticia {padding-top: 20px;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .item-content-texto { float: left; width: 45%;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .imagem-item { float:left; width:39%;margin-right:5%;}
+.noticias-listagem.blog .artigos_list .listagem .item-noticia .imagem-item img.img-holder-img {max-height: 180px; display: block; margin:0 auto;}
+.noticias-listagem.blog .pagination {margin: 20px; height: 40px;}
+.artigo.not-page {border-bottom: 1px solid #d9d9d9;clear: both;display: block;margin-bottom: 20px !important;padding-bottom: 55px !important;padding-top: 80px;}
+.artigo.not-page .page-header {margin:0; padding:0;}
+.artigo.not-page .page-header h1{margin: 0 0 10px; padding:0;color: #af8d38!important;font-weight: 700; font-family: "Roboto Condensed",sans-serif;text-transform: uppercase;font-size: 21px!important;line-height: 21px;}
+.artigo.not-page .page-header h2{font-family: "Cinzel",serif;font-weight: 500;line-height: 38px; margin:0 0 10px; padding:0;}
+.artigo.not-page .page-header h2 a {font-size: 38px!important; color: #666!important;line-height: 38px; margin: 0; padding:0;}  
+.artigo.not-page .item-image {float: left; width: 45%;}
+.artigo.not-page .item-image img { display: block; margin: 0 auto;max-height: 500px;}
+.artigo.not-page div[itemprop="articleBody"] { float: left; width: 51%; clear:none!important; border:none!important; line-height:24px;}
+.artigo.not-page .pager.pagenav { left: 0;margin: auto;position: absolute;right: 0;bottom: 15px;width: 100%;z-index:12;max-width: 1320px; }
+.artigo.not-page .pager.pagenav .previous a span {left: 2px; }
+.artigo.not-page .pager.pagenav .next a span { right:3px;}
+.artigo.not-page .pager.pagenav .next a span,
+.artigo.not-page .pager.pagenav .previous a span {  color: #cbcbcb;  -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;position: absolute;top: 3px;}
+.artigo.not-page .pager.pagenav .next a:hover,
+.artigo.not-page .pager.pagenav .next a:hover > span,
+.artigo.not-page .pager.pagenav .previous a:hover { border-color:#666; }
+.artigo.not-page .pager.pagenav .next a:hover > span,
+.artigo.not-page .pager.pagenav .previous a:hover > span {color:#666;}
+.artigo.not-page .pager.pagenav .next a,
+.artigo.not-page .pager.pagenav .previous a { 
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 3px solid #cbcbcb;border-radius: 35px;color: #f1f1f1 !important;display: inline-block;height: 20px;margin: 0;overflow: hidden;padding: 0;position: relative;width: 20px; }
+.bx-prev.disabled { display: none;}
+
+/*VINHAS LISTAGEM*/
+.conteudos .vinhas.blog {background-color: #1a1617; }
+.conteudos .vinhas.blog, 
+.conteudos .vinhas-container { max-width: 100%; margin: 0 auto; background-attachment: scroll;background-clip: border-box;background-color: rgba(0, 0, 0, 0);background-origin: padding-box;
+background-position: center top;background-size: cover;overflow: hidden;position: relative;}
+.conteudos .vinhas.blog .vinhas-container .intro-texto {margin: 0 auto;max-width: 650px;padding-top: 35px;text-align: center; padding-bottom: 10%; position: relative; z-index: 3; height:450px;}
+.conteudos .vinhas.blog .category-desc p {display: block; margin:0 auto;font-size: 17px;line-height: 22px;}
+.conteudos .vinhas.blog .vinhas-container .intro-texto h1 {margin:0; padding:0;font-size: 21px;}
+.conteudos .vinhas.blog .category-desc h2, 
+.conteudos .vinhas.blog .category-desc h2 strong{font-family: "Cinzel",serif;margin-top: 10px;font-size: 38px;font-weight: 500;line-height: 38px;text-transform: uppercase;}
+.conteudos .vinhas.blog .vinhas-container .coluna-galeria {  height: 425px;margin: 4% auto 7%;max-width: 1320px;position: relative;z-index: 3; width:92%;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .item { width:180px;}
+.RepeaterProdutos { width:100%; height:100%;position: relative;}
+.vinhas .RepeaterProdutos { position: relative;}
+.conteudos .vinhas.blog .show-more {-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;
+background-color: #a8a6a6;border-radius: 7px;color: #fff;display: block;height: 20px;margin: 30px auto 0;padding: 2px;text-align: center;width: 100px;}
+.conteudos .vinhas.blog .show-more:hover { background-color: #fff; text-decoration:none;opacity:0.5;color: #000;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .lnk_item { display: block; position: absolute; height:100%; width: 100%; z-index:2; }
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .gal-img { max-height: 120px; overflow: hidden;padding-top: 2px; padding-bottom: 2px; border-top: 2px solid #7b7b7b;border-bottom: 2px solid #525252;}
+.conteudos .vinhas.blog .RepeaterProdutos .bx-wrapper {margin:0 auto;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .img-holder-img {display: block; }
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .page-header { margin: 10px 0 0;min-height: 40px;padding: 0;position: relative;top: 0;width: 100%;z-index: 2;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas {bottom: -34%;display: block;height: 40px;position: absolute;width: 96%;z-index: 5;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev { position: absolute; bottom: 400px; left: 0; display: block; height: 40px; width: 40px;} 
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next {position: absolute; right: -65px; bottom: 400px;display: block; height: 40px; width: 40px;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next span.fa {text-indent:2px; }
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev span.fa {text-indent:-2px; }
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next span.fa,
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev span.fa { border: 2px solid #fff;border-radius: 30px;color: #fff;display: inline-block;font-size: 12px;height: 16px;line-height: 15px;padding: 4px;text-align: center;width: 16px;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev a.disabled + span.fa ,
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next a.disabled + span.fa {opacity:0.5; }
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev a,
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next a {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll;cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;position: absolute;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev a.disabled,
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next a.disabled {display: none;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-prev a {background-position: -4px -85px;}
+.conteudos .vinhas.blog .RepeaterProdutos .setas .seta-next a{background-position: -38px -85px;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao { bottom: 3%;height: 16px;position: absolute;width: 100%;z-index: 5;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao.disabled {display: none;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao .bx-pager {display: block; text-align: center;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item {  display: inline-block;height: 15px;margin-left: 2px;margin-right: 2px;vertical-align: top;width: 16px;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item .bx-pager-link.active {background:#fff;opacity: 1;}
+.conteudos .vinhas.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item .bx-pager-link {-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease; background: #666 none repeat scroll 0 0;border-radius: 13px;cursor: pointer;display: block;height: 11px;opacity: 0.65;overflow: hidden;text-indent: -10000px;width: 11px;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .page-header h2 {text-align: center;line-height: 10px;margin: 0;min-height: 40px;padding: 0;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .page-header h2 a {color: #af8d38;text-transform:uppercase!important;margin:0;padding:0;font-size: 17px!important;line-height: 10px;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .texto {margin: 0 auto 15px;text-align: center;max-width: 171px;min-height: 71px;color: #aaa;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .texto h2,
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .texto p,
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .texto span {line-height: 14px; color:#aaa;text-align: center;font-size: 14px; margin:0; padding:0; font-weight:normal; }
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .readmore {
+-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;
+background-color: #fff;border-radius: 7px;color: #666;display: block;font-size: 11px;height: 20px;line-height: 20px;margin: 0 auto;padding: 2px;text-align: center;
+text-transform: uppercase;width: 100px;}
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem:hover .readmore,
+.conteudos .vinhas.blog .RepeaterProdutos .RepeaterItem .readmore:hover { background-color: #fff; text-decoration:none;opacity:0.5;}
+
+
+/***** VINHOS LISTAGEM  **********/
+.vinhos.portfolio > .page-header {max-width: 830px; margin: 0 auto;}
+.layout-dp_templatevinhos .centro {background-color:#f1f1f1;}
+.conteudos .vinhos.blog { max-width: 1320px; margin: 0 auto; }
+.conteudos .vinhos.blog .vinhos-container {max-width: 85%;margin:0 auto; height:100%;}
+.mobile.conteudos .vinhos.blog .vinhos-container {max-width: 92%; }
+.conteudos .vinhos.blog .vinhos-container .intro-texto {margin: 0 auto;max-width: 860px;padding-top: 35px;text-align: center;}
+.cat-children { display:none;}
+.conteudos .vinhos.blog .category-desc p {display: block; margin:0 auto;max-width:500px; width: 65%;  font-size: 17px;line-height: 22px;}
+.conteudos .vinhos.blog .vinhos-container .intro-texto h1 { padding:0;font-size: 21px; margin-top: 10px; margin-bottom: 0;}
+.conteudos .vinhos.blog .category-desc h2, .conteudos .vinhos.blog .category-desc h2 strong{font-family: "Cinzel",serif;font-size: 38px; margin-top: 10px;font-weight: 500;line-height: 38px;text-transform: uppercase;
+margin: 0 auto;
+    max-width: 70%;
+}
+.conteudos .vinhos.blog .page-header h1 {font-size: 32px;padding-bottom: 10px;padding-top: 30px;text-transform:none; text-align: left; margin-bottom: 20px; display: block; margin: 0 auto; max-width: 1100px;}
+.conteudos .vinhos.blog .category-desc {font-size: 17px;font-weight: 300;line-height: 150%;margin: 0 auto;max-width: 98%;text-align: center;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem {display: block;float: left;height: 560px;margin: 0;width: 170px;overflow: hidden;position: relative;}
+.conteudos .vinhos.blog .RepeaterProdutos .bx-wrapper {position:relative;max-height: 610px;margin:0 auto;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas {bottom: 0;display: block;height: 0;position: absolute;width: 100%;z-index: 5;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-prev { position: absolute; bottom: 300px; left: -65px; display: block; height: 40px; width: 40px;} 
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-next {position: absolute; right: -65px; bottom: 300px;display: block; height: 40px; width: 40px;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-next span.fa {text-indent:2px; }
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-prev span.fa {text-indent:-2px; }
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-next span.fa,
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-prev span.fa { border: 2px solid #999;border-radius: 30px;color: #999;display: inline-block;font-size: 12px;height: 16px;line-height: 15px;padding: 4px;text-align: center;width: 16px;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-prev a.disabled + span ,
+.conteudos .vinhos.blog .RepeaterProdutos .setas .seta-next a.disabled + span {opacity:0.5; }
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-next,
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-prev {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll ;
+cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;position: absolute;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-next {background-position:-37px -115px;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-prev {background-position:0 -115px ;}
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-next.disabled,
+.conteudos .vinhos.blog .RepeaterProdutos .setas .bx-prev.disabled { display: none;}
+.conteudos .vinhos.blog .RepeaterProdutos #navegacao { bottom: -35px;height: 16px;position: absolute;width: 100%;z-index: 5;}
+.conteudos .vinhos.blog .RepeaterProdutos #navegacao .bx-pager {display: block; text-align: center;}
+.conteudos .vinhos.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item {  display: inline-block;height: 15px;margin-left: 2px;margin-right: 2px;vertical-align: top;width: 16px;}
+.conteudos .vinhos.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item .bx-pager-link.active {background:#4f4f4f;opacity: 1;}
+.conteudos .vinhos.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item .bx-pager-link {-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease; background: #666 none repeat scroll 0 0;border-radius: 13px;cursor: pointer;display: block;height: 11px;opacity: 0.65;overflow: hidden;text-indent: -10000px;width: 11px;}
+.conteudos .vinhos.blog .RepeaterProdutos {text-align: center;padding-bottom: 20px; margin: 0 auto;width: 100%; max-height:550px;position:relative;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .texto { max-width:80%; margin: 0 auto; height:43px;overflow: hidden; margin-bottom: 20px; }
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .readmore { -webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;background-color: #a8a6a6;border-radius: 7px;color: #fff;display: block;height: 20px;margin: 0 auto;padding: 2px;text-align: center;width: 70px; }
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem:hover .readmore,
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .readmore:hover { background-color: #666; text-decoration:none;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .texto p,
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .texto span {line-height: 14px; }
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .page-header { margin: 10px 0 0;min-height: 40px;padding: 0;position: relative;top: 0;width: 100%;z-index: 2;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .page-header h2 {line-height: 10px;margin: 0;min-height: 40px;padding: 0;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .page-header h2 a {color: #af8d38;text-transform:uppercase!important;margin:0;padding:0;font-size: 17px!important;line-height: 17px!important;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img { height: 420px;width: 100%; position: relative; }
+.conteudos .vinhos.azeitonas.blog .RepeaterProdutos .RepeaterItem > .gal-img { min-height: 120px; height: auto;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .item_hover { height:160px; display:block; position:relative;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem .lnk_item { display: block; position: absolute; height:100%; width: 100%; z-index:2; }
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .img-holder-img {
+background-color: rgba(255,255,255,.01);
+-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease;bottom: 0;left: 0;margin: auto;width: 110px;position: absolute;right: 0;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem:hover > .gal-img .img-holder-img {
+-ms-transform: scale(1.1,1.1);
+-webkit-transform: scale(1.1,1.1);
+-moz-transform: scale(1.1,1.1);
+-o-transform: scale(1.1,1.1);
+transform: scale(1.1,1.1);}
+
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .medalhas { pointer-events:none; position:absolute; right:0; bottom:8%; z-index:33; -webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease;transition: all 0.4s ease; }
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .medalhas > div > img { max-width:80px; height: auto;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .item_hover {bottom: 0;display: block;height: 26%;left: 0;margin: auto;position: absolute;right: 0;text-align: center;top: 0;width: 80%;z-index: 5;pointer-events: none;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .page-header h2{margin:0; padding:0;text-transform: none; font-weight: normal;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .page-header h2 a{color:#fff!important;margin:0; padding:0;}
+.conteudos .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .page-header { display: block;z-index: 4; margin:0; padding:0;}
+.conteudos .marcas-mod { width:96%; margin:75px auto 60px; }
+.small .vinhos.blog { width:96%;}
+.small .vinhos.blog .RepeaterProdutos .RepeaterItem {padding-bottom: 0!important; width: 140px; height:600px;}
+.small .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img {height:400px;padding-bottom: 0!important; }
+.mobile .vinhos.blog .RepeaterProdutos .RepeaterItem {   padding-bottom: 0!important; width: 190px!important; height:465px; margin: 0 auto;}
+.mobile .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img {height: 290px;padding-bottom: 0!important; }
+.mobile .vinhos.blog .RepeaterProdutos .RepeaterItem > .gal-img .img-holder-img {width: 80px;}
+.mobile .vinhos.blog { width:96%;}
+.mobile .vinhos.blog .RepeaterProdutos .bx-wrapper .bx-viewport { height: 600px; }
+.mobile .vinhos.blog .vinhos-container {width:98%; }
+.mobile .vinhos.blog .vinhos-container .intro-texto .category-desc {max-width: 98%;}
+.mobile .vinhos.blog .category-desc h2, 
+.mobile .vinhos.blog .category-desc h2 strong {font-size: 25px; line-height: 25px;}
+.mobile .vinhos.blog .category-desc p { width:98%;}
+.mobile .vinhos.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item .bx-pager-link{height: 8px; width:8px;}
+.mobile .vinhos.blog .RepeaterProdutos #navegacao .bx-pager .bx-pager-item { width: 12px; height: 8px;}
+.mobile .vinhos.blog .RepeaterProdutos .bx-wrapper {max-height: 480px; overflow: hidden;}
+.mobile .vinhos.blog .RepeaterProdutos #navegacao {height: 16px;left: 0;margin: auto;position: absolute;right: 0;width: 83%;z-index: 5;bottom: -25px;}
+.mobile .vinhos.blog .RepeaterProdutos .setas .seta-prev,
+.mobile .vinhos.blog .RepeaterProdutos .setas .seta-next { width: 30px;}
+.mobile .vinhos.blog .RepeaterProdutos .setas .seta-prev{bottom: 300px; left: -15px;}
+.mobile .vinhos.blog .RepeaterProdutos .setas .seta-next {bottom: 300px; right: -15px;}
+.categorys-link {margin-top:15px;}
+.categorys-link ul { text-align: center;}
+.categorys-link ul li { display: inline-block!important; width: auto!important; margin:4px!important; position: relative;}
+.categorys-link ul li:after{ background-color: #af8d38;content: "";display: block;height: 15px;position: absolute;right: 0;top: 10px;width: 1px;}
+.categorys-link ul li:last-child:after {display: none;}
+.categorys-link ul li a {background-color: #f1f1f1;color: #666;display: block;font-family: "Roboto Condensed",sans-serif;font-weight: 500;letter-spacing: 0.5px;
+line-height: 13px;padding: 10px 31px;position:relative;text-align: center;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+text-transform: uppercase;}
+.categorys-link ul li.active a,
+.categorys-link ul li a:hover { color: #af8d38;}
+
+
+/* TEMPLATE CONTEUDOS*/
+.conteudos .slider_conteudos #slider,
+.conteudos .slider_conteudos {position: relative;height: 375px;padding: 0;margin: 0;}
+.conteudos .slider_conteudos #slider .slider-item { height: 100%; width: 100%; list-style:none;padding:0; margin:0;}
+.conteudos .slider_conteudos #slider .slider-item .slide-desc.tbl {display:none;}
+.conteudos .full-width-banner { height: 375px; max-width: 100%; position: relative; margin: 0 auto; clear: both; overflow: hidden; }
+.conteudos .copyright_home { display: none;}
+.conteudos .body > .centro.container .bloco-central .span9 {width: 74.415%!important;}
+.conteudos .conteudo.container { max-width: 830px;}
+.conteudos .container {background:none!important;padding:0!important; width: auto!important; border:none!important; box-shadow:none!important;}
+.conteudos .container > .bloco-central { margin-bottom: 40px;width: auto !important;padding:30px;}
+.conteudos .container .bloco-central.row-fluid .span12{width:100%!important;}
+.conteudos .breadcrumb { margin: 0; padding: 17px 0 0; box-shadow: none;}
+.conteudos .navigation { margin-bottom: 0;padding: 0; position: absolute;}
+.conteudos .navigation  ul li span,
+.conteudos .navigation  ul li a.pathway{font-size:12px; display: inline-block;width: auto;}
+.conteudos .navigation  ul li span.divider img { position: relative;top: -1px;}
+.conteudos .article-info.muted  dl.article-info {margin-bottom: 15px; margin-top: 3px;color:#6D6D6D;}
+.conteudos .article-info.muted  dl.article-info dt{display:none;}
+.conteudos .article-info.muted  dl.article-info dd{ display:inline-block; font-size: 9px;}
+
+
+/*MODULOS GALERIA CONTEUDOS*/
+.galeria {  min-height: 730px;margin: 0 auto;max-width: 800px;position: relative;}
+.galeria .gal-port {max-width: 890px; width:100%; margin:0 auto; height:0; padding-bottom: 60%; }
+.galeria .gal-port > p {display: none;}
+.galeria .gal-port .slider_conteudos,
+.galeria .gal-port .slider_conteudos #slider .slider-item,
+.galeria .gal-port .slider_conteudos #slider { height: 770px; width: 100%;max-width: 800px;}
+.galeria .gal-port .slider_conteudos #slider .slider-item .img-block { max-width: 800px; max-height: 500px;}
+.galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc {bottom: -110px;display: block;margin: 0 auto;max-width: 560px;min-height: 120px;position: relative;width: 96%;}
+.galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-title { color: #af8d38; margin-bottom: 10px;font-size: 22px;font-weight: bold;text-transform: uppercase;}
+.galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text {color: #fff;font-size: 16px;line-height: 19px; }
+.galeria #gal-thumbs {left: 9px;margin: 0;}
+.galeria #gal-thumbs li { display: block;float: left;height: 44px;margin: 4px;width: 80px;}
+.galeria #gal-thumbs li a {overflow: hidden; display: block; height: 100%; width: 100%;padding:3px; border: none;}
+.galeria #gal-thumbs li a.galeria_item.active { border: none;}
+.galeria #gal-thumbs li a.galeria_item.active .galeria_thumb {opacity:1; }
+.galeria #gal-thumbs li img {margin: 0; min-width: 70px;width: 100%;opacity:0.45;}
+.galeria .thumbs-wrapper {height: 79px;overflow: hidden;position: relative;width: 100%;z-index: 56;margin-top: 10px;}
+.galeria .setas-area {position: absolute;top: 30%;width: 100%;z-index:51; display:block;}
+.galeria .setas-area .seta-prev{ height: 51px; left: -10%;position: absolute;}
+.galeria .setas-area .seta-next{ height: 51px;right: -10%;position: absolute;}
+.galeria .setas-area .seta-next .bx-next {opacity: 0.4; background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -38px -85px;cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+.galeria .setas-area .seta-next .bx-next:hover {opacity: 1;}
+.galeria .setas-area .seta-prev .bx-prev {opacity: 0.4;background: rgba(0,0,0,0)url("../images/sprite.png") no-repeat scroll -6px -85px;cursor: pointer;display: block;height: 30px;pointer-events: all;top: 0;width: 30px;z-index: 61;
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+.galeria .setas-area .seta-prev .bx-prev:hover {opacity: 1;}
+
+/*ARTIGO*/
+.conteudos .artigo.base h1,
+.conteudos .bloco-central #content .page-header h2, 
+.conteudos .bloco-central .artigo .page-header h1{ font-size: 32px; color:#af8d38;text-transform: uppercase;}
+.conteudos .bloco-central .artigos_list .page-header h2{ padding-top: 40px;}
+.conteudos .bloco-central .artigo{  margin-bottom: 20px;padding-bottom: 80px;padding-top: 80px; margin: 0 auto; max-width:850px;position: relative;/*width: 80%;*/}
+.conteudos .bloco-central .artigo .item-image { float: left;}
+.conteudos .bloco-central #content .page-header h2 a {font-family: "Roboto Condensed",sans-serif; font-size: 28px; font-weight: 700; line-height: 38px;color:#af8d38;-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;}
+.conteudos .bloco-central #content .page-header h2 a:hover {text-decoration: none;color:#af8d38;}
+.conteudos .bloco-central .artigo div[itemprop="articleBody"]  {word-wrap: break-word;display: block; height: 100%; clear: both; border-bottom: 1px solid #ccc;padding-bottom: 20px; font-size: 17px; color:#666;line-height: 150%;}
+.conteudos .bloco-central .artigo div[itemprop="articleBody"] img:first-child {margin-bottom: 30px;}
+.conteudos .bloco-central .artigo div[itemprop="articleBody"] p ,
+.conteudos .bloco-central .artigo div[itemprop="articleBody"] span{margin: 0;padding: 0;}
+.conteudos .bloco-central .artigo .item-image img{ margin-bottom: 30px;}
+.conteudos .bloco-central .artigo div[itemprop="articleBody"] .bt-social-share {background: none ;border: medium none !important;clear: both;display: block;height: 22px;margin-bottom: 15px;width: 100%;}
+.conteudos .bloco-central #aside{margin-top: 57px;}
+.conteudos .page-header { position: relative;margin: 2px 0 10px; padding-bottom: 5px;border: none; }
+.breadcrumb .divider.icon-location {display: none;}
+.artigo.base .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text{ color: #666!important;}
+.artigo.base .text-area .intro-area .intro-corpo {float: none;margin: 5% auto 0;max-width: 600px;min-height: 200px;text-align: center;width: 65%;}
+.artigo.base .intro-texto p {display: block;font-size: 16px;line-height: 19px;margin: 0 auto;}
+.artigo.base .galeria .setas-area .seta-next .bx-next { background-position: -38px -118px}
+.artigo.base .galeria .setas-area .seta-prev .bx-prev {background-position: -6px -118px;}
+.artigo .bottom-block .partilhas { width: 250px; margin: 0 auto; clear: both;}
+.artigo .bottom-block  {padding-bottom: 50px;}
+.mobile .bloco-central .artigo div[itemprop="articleBody"] {font-size: 15px;}
+.mobile .artigo.base h1, 
+.mobile .bloco-central #content .page-header h2,
+.mobile .bloco-central .artigo .page-header h1 { font-size:24px; }
+.mobile .bloco-central .artigo {padding-top: 30px;}
+.mobile #osmap ul.level_0 { width: 90%;}
+
+/*HISTORIA*/
+.normal .artigo.item-page.historia,
+.small .artigo.item-page.historia,
+.mobile .artigo.item-page.historia { width:100%!important; }
+.artigo.item-page.historia {padding:0;max-width:100%; width:100%; position: relative;background-color: #1a1617;}
+.artigo.item-page.historia .fundo-pagina {z-index:1;}
+.artigo.item-page.historia .background-holder { width: 100%; padding-bottom: 68%; height:0; position: absolute; top:0;}
+.artigo.item-page.historia .text-area{ height:100%;margin: 0;width: 100%;}
+.artigo.item-page.historia .text-area .intro-area { margin: 0 auto;max-width: 1320px;padding:36% 0 1%;position:relative; z-index:2; }
+.artigo.item-page.historia .full-area { height: 100%;margin: 0 auto;position: relative;width: 100%;}
+.artigo.item-page.historia .text-area .intro-area .img-intro { float: left;margin-left: 0;margin-top: 2%;/*min-height: 200px;*/width: 44%;position: relative;}
+.artigo.item-page.historia .text-area .intro-area .intro-corpo{ float: right;margin-right: 12%;min-height: 200px;text-align: center;width: 44%;}
+.artigo.item-page.historia ~ .redes_sociais {position:absolute; height:50px; width: 300px;}
+.artigo.item-page.historia .text-area .intro-area .intro-corpo h1 { text-transform: uppercase; color:#af8d38; font-family: "Roboto Condensed",sans-serif; font-weight: 700; font-size: 21px;letter-spacing: 0.6px; }
+.artigo.item-page.historia .text-area .intro-area .intro-corpo .intro-texto h2 {font-family: 'Cinzel', serif;font-weight:500;text-transform: uppercase; color: #fff; font-size: 38px; line-height: 38px;    }
+.artigo.item-page.historia .text-area .intro-area .intro-corpo .intro-texto {padding-bottom: 30px; color: #aaa; font-size: 17px;line-height: 22px; width:94%; margin:0 auto; }
+.artigo.item-page.historia .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text {color: #aaa;}
+.artigo.item-page.historia .assinatura {  bottom: 0;left: 0;margin: auto !important;position: absolute;right: 0;}
+
+/*ADEGA*/
+.artigo.item-page.adega { padding:0;background-color:#1a1617;max-width:100%;}
+.artigo.item-page.adega .full-area { max-width:79%; margin: 0 auto; min-height:80px;}
+.artigo.item-page.adega .text-area { height: 100%;margin: 0;max-width: 100%;width: 100%; background-repeat: no-repeat; background-size: cover;}
+.artigo.item-page.adega .text-area .intro-area { margin: 0 auto;max-width: 1320px;padding:23% 0 4%;position:relative; z-index:2; }
+.artigo.item-page.adega .text-area .intro-area .intro-corpo .page-header h1,
+.artigo.item-page.adega .text-area .intro-area .intro-corpo .page-header {margin-bottom:10px; padding:0;}
+.artigo.item-page.adega .text-area .intro-area .intro-corpo .page-header h1{ color: #af8d38;font-family: "Roboto Condensed",sans-serif; font-weight: 700;text-transform: uppercase;font-size: 21px;line-height: 28px;}
+.artigo.item-page.adega .text-area .intro-area .intro-corpo { float: none; width: 65%;min-height: 200px; margin: 0 auto;text-align: center;max-width: 720px;position: relative;}
+.artigo.item-page.adega .text-area .intro-area .intro-corpo .intro-texto p { color: #aaa; font-size: 17px;line-height: 24px;}
+.artigo.item-page.adega .text-area .intro-area .intro-corpo .intro-texto h2 { display: block; color: #fff;font-family: "Cinzel",serif;font-size: 38px;font-weight: 500;line-height: 38px;text-transform: uppercase;max-width: 680px; margin: 0 auto;margin-bottom: 10px; text-align: center;}
+.artigo.item-page.adega .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text {color: #aaa;}
+
+/*ENOTURISMO*/
+.artigo.item-page.enoturismo { padding:0;background-color:#fff;max-width:100%;}
+.artigo.item-page.enoturismo .full-area { max-width:79%; margin: 0 auto; min-height:80px;position: relative;height: 620px; }
+.artigo.item-page.enoturismo .text-area {height: 100%;margin: 0;max-width: 100%;padding-bottom: 37%;position: relative;width: 100%;background-repeat: no-repeat; background-size: cover;}
+.artigo.item-page.enoturismo .text-area .intro-area { position:relative;z-index:2; margin: 0 auto;max-width: 1160px; }
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .page-header,
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .page-header h1{margin:0; padding:0;}
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .page-header h1{ color: #af8d38;text-transform: uppercase;font-size: 21px;font-family: "Roboto Condensed",sans-serif; font-weight: 700;line-height: 38px; margin-top: 10px;}
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo{ float: left;min-height: 200px;padding-left: 2%;padding-top: 6%;text-align: center;width: 52%;}
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .intro-texto p {font-weight: 500;color: #666;font-size: 17px;font-weight: 500;line-height: 22px;padding-bottom: 30px;/*text-shadow: 1px 1px 2px #333;*/}
+.small .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo { width: 65%;}
+.artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .intro-texto h2 {color: #666;font-family: "Cinzel",serif;font-size: 38px;font-weight: 500;line-height: 38px;text-transform: uppercase;}
+.artigo.item-page.enoturismo .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text {color: #666;font-size: 17px;line-height: 22px;}
+.artigo.item-page.enoturismo .galeria {top: -150px;}
+.artigo.item-page.enoturismo .galeria .setas-area .seta-next .bx-next {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -34px -117px;}
+.artigo.item-page.enoturismo .galeria .setas-area .seta-prev .bx-prev {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -2px -117px;}
+
+/*VINHAS SHOW*/
+.artigo.item-page.vinhas-show { background-position: center top !important;background-color:#1a1617;background-repeat: no-repeat !important;background-size: cover !important;height: 100%;margin: 0;max-width: 100%;padding:4% 0;width: 100%;}
+.artigo.item-page.vinhas-show .full-area { max-width:79%; margin: 0 auto; min-height:80px;}
+.artigo.item-page.vinhas-show .text-area {max-width:79%; margin: 0 auto;}
+.artigo.item-page.vinhas-show .text-area .intro-area {height: auto;margin: 0 auto;max-width: 650px;padding-bottom: 3%;padding-top: 0;position: relative;text-align: center;}
+.artigo.item-page.vinhas-show .text-area .intro-area .intro-corpo .page-header h1,
+.artigo.item-page.vinhas-show .text-area .intro-area .intro-corpo .page-header {margin:0; padding:0;}
+.artigo.item-page.vinhas-show .text-area .intro-area h1 {font-size: 22px;margin: 0;padding: 0;}
+.artigo.item-page.vinhas-show .text-area .intro-area h2 {color: #666;font-family: "Cinzel",serif;font-size: 38px;font-weight: 500;line-height: 38px;text-transform: uppercase;}
+.artigo.item-page.vinhas-show .text-area .intro-area p {display: block;font-size: 16px;line-height: 19px;margin: 0 auto;}
+
+.artigo.item-page.vinhas-show .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text {color: #666;}
+
+
+/*VINHOS SHOW*/
+.big .vinho-show .inner-vinho > .navegacao {left: -15%;max-width: 1420px;width: 127%;}
+.large .vinho-show .inner-vinho > .navegacao {left: -15%;max-width: 1420px;width: 127%;}
+.normal .vinho-show .inner-vinho > .navegacao {  left: -7%;max-width: 1050px;width: 114%;}
+.artigo.vinho-show .item-page {border-bottom: 1px solid #ccc;}
+.mobile .navegacao,
+.navegacao-mobile { display: block;top:-45px; position: absolute; left: 0;}
+.small .navegacao-mobile{left: 5px;position: absolute;top: -55px;}
+.mobile .navegacao-mobile {top: -15px;}
+.navegacao-mobile a {-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;
+font-size: 13px;
+background-color: #a8a6a6;
+border-radius: 7px;
+color: #fff;
+display: inline-block;
+height: 23px;
+line-height: 23px;
+padding:4px 10px;
+text-align: center;
+text-shadow: none;
+width: 70px;
+}
+.navegacao-mobile a:hover{ background-color: #a8a6a6;color: #333;text-decoration: none;}
+.vinho-show .inner-vinho {   margin: 0 auto;max-width: 1100px;padding-top: 50px;}
+.vinho-show .back-btn {display: block; position: absolute; top: 0; left: 0;}
+.vinho-show .bottom-block { float: none;margin-left:auto;margin-right: 0;max-width: 610px;padding-bottom: 70px;padding-top: 15px; }
+.vinho-show .bottom-block .partilhas { float: right; width:auto;margin-left: 20px; }
+.vinho-show .bottom-block .fic-tec a,
+.vinho-show .bottom-block a.btn-tec { 
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;
+background: #aaa none repeat scroll 0 0;border-radius: 8px;color: #fff;display: inline-block;font-size: 11px;font-weight: bold;line-height: 16px;
+margin-bottom: 5px;margin-left: 10px;min-width: 80px;padding: 4px 14px 4px 7px;text-align: center;text-decoration: none;text-transform: uppercase;transition: all 0.2s ease 0s;}
+.vinho-show .bottom-block .fic-tec { max-width: 134px; display: inline-block; }
+.vinho-show .bottom-block a.btn-tec > span,
+.vinho-show .bottom-block .fic-tec a > span.fa {margin-right: 6px; }
+.vinho-show .bottom-block .fic-tec a:hover,
+.vinho-show .bottom-block a.btn-tec:hover {background: #666 none repeat scroll 0 0;text-decoration: none;}
+.vinho-show .inner-vinho > .navegacao { display: block; left: 0;margin: auto;position: absolute;right: 0;top: 37%;width: 90%;z-index:12;max-width: 1320px; }
+.vinho-show .inner-vinho .navegacao .previous a span {left: 2px; }
+.vinho-show .inner-vinho .navegacao .next a span { right:3px;}
+.vinho-show .inner-vinho .navegacao .next a span,
+.vinho-show .inner-vinho .navegacao .previous a span {  color: #cbcbcb;  -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;position: absolute;top: 3px;}
+.vinho-show .inner-vinho .navegacao .next a:hover,
+.vinho-show .inner-vinho .navegacao .next a:hover > span,
+.vinho-show .inner-vinho .navegacao .previous a:hover { border-color:#666; }
+.vinho-show .inner-vinho .navegacao .next a:hover > span,
+.vinho-show .inner-vinho .navegacao .previous a:hover > span {color:#666;}
+.vinho-show .inner-vinho .navegacao .next a,
+.vinho-show .inner-vinho .navegacao .previous a { 
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: 3px solid #cbcbcb;border-radius: 35px;color: #f1f1f1 !important;display: inline-block;height: 20px;margin: 0;overflow: hidden;padding: 0;position: relative;width: 20px; }
+.vinho-show .left-block { display: block;float: left;height: 100%; position: relative;width: 29%;}
+.vinho-show .left-block .image-block .imagem .img-holder-img {display: block;float: right;height: auto;max-height: 695px;/*max-width: 200px;*/position: relative; }
+.vinho-show .left-block .image-block .medalhas { bottom: 35px;position: absolute;right: -50px; }
+.vinho-show .left-block .image-block .medalhas img {max-width: 110px; }
+.vinho-show .right-block {border-bottom: 1px solid #d9d9d9;display: block;float: right;min-height: 700px;padding-left: 50px;padding-right: 4%;position: relative;width: 61%;}
+.vinho-show .right-block .page-header {margin:0; padding:0;border-bottom: 1px solid #cdcdcd; margin-bottom: 25px;} 
+.conteudos .bloco-central .artigo.vinho-show .right-block .navegacao {left: auto;margin: 0;position: absolute;right: -33px;text-align: center;top: 0;width: 100px;}
+.conteudos .bloco-central .artigo.vinho-show .right-block .navegacao a > span {font-size:10px; }
+.conteudos .bloco-central .artigo.vinho-show .right-block .navegacao a { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;
+background: #ccc none repeat scroll 0 0;border-radius: 8px;color: #fff;display: block;font-size: 14px;font-weight: bold;line-height: 17px;padding: 5px 14px 5px 7px;text-transform: uppercase;width: 80px;}
+.conteudos .bloco-central .artigo.vinho-show .right-block .navegacao a:hover { text-decoration:none; background: #666 none repeat scroll 0 0;} 
+.conteudos .bloco-central .artigo.vinho-show .right-block .page-header h1 {color:#666;margin-bottom: 25px;max-width: 75%;}
+.mobile.conteudos .bloco-central .artigo.vinho-show .right-block .page-header h1 {font-size:20px; margin-bottom: 13px;max-width: 98%;color:#af8d38; text-align:center;}
+.conteudos .bloco-central .artigo.vinho-show .right-block .intro-text { font-size: 17px;line-height: 21px;margin-top: 5px;max-width: 450px;padding-bottom: 18px; }
+.vinho-show .right-block .details-list > div { margin-bottom: 10px;}
+.vinho-show .right-block .details-list > div > .title { line-height: 21px;display: inline-block;font-size: 16px;font-weight: bold;min-width: 25%;text-align: right;text-transform: uppercase;vertical-align: top;}
+.vinho-show .right-block .details-list > div > .value { clear: both;display: inline-block;font-size: 16px;line-height: 21px;margin-left: 10px;max-width: 63%;text-align: left;}
+
+/*MENU RIGHT*/
+ul.nav.menu-right li > a{color:#333!important; border:none; font-size:10px;line-height:18px;-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+ul.nav.menu-right li{margin-bottom:3px;}
+ul.nav.menu-right li > a:hover, ul.nav.menu-right li.current.active > a{color:#af8d38!important;}
+
+/*MENU DROPDOWN*/
+.conteudos .icons.nav-hover .dropdown-menu {background-color: #dedede;float: left;left: 0;min-width: 105px;padding: 5px 0; font-size:10px!important;}
+.conteudos .icons.nav-hover .dropdown-menu > li > a:hover, 
+.conteudos .icons.nav-hover .dropdown-menu > li > a:focus, 
+.conteudos .icons.nav-hover .dropdown-submenu:hover > a, 
+.conteudos .icons.nav-hover .dropdown-submenu:focus > a {background-color: #cfd2d5;background-repeat: repeat-x;color: #282424;text-decoration: none;}
+
+/*Banner*/
+.banner {display: block;height: auto;margin: 0 auto;max-height: 450px;max-width: 1320px;overflow: hidden;position: relative;width: 100%;}
+.banner .banner-home .slide-desc{  width: 45%!important; float: left; height: 100%; padding-left: 4%;display: table;}
+.banner .banner-home .slide-desc .slide-desc-in {height: 100%;display: table-cell; vertical-align: middle;}
+.banner .banner-home .slide-desc .slide-desc-bg { background:none;}
+.banner .banner-home .slide-desc .slide-desc-text .slide-title { font-size: 38px; line-height: 38px; color: #fff; font-weight: bold;text-shadow: 1px 2px 6px rgba(0, 0, 0, 1);margin-bottom: 5%;}
+.banner .banner-home .slide-desc .slide-desc-text .slide-text { font-size: 18px; color: #fff; font-weight: bold; width:70%;text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);}
+.banner .banner-home .navigation-container { top: 45%!important;}
+
+/*FOOTER*/
+.footer {margin:0 auto;/*max-width:1320px;*/ min-height:205px; background:#1a1617; border-top: 2px solid #333; }
+.footer .footer-inner {max-width:1200px;margin: 0 auto;}
+.footer #tab1 {display: block; float: left; width:60%;padding-left: 2%;}
+.footer #tab1 .menu_footer_area { padding-left: 0; padding-top: 20px; text-align: center;}
+.footer #tab2 .logo-footer {min-height:90px;}
+.footer #tab2 {display: block; float: right; width: 30%; position: relative;}
+.footer .tab {float: left;}
+.footer .copyright-text { color: #fff;height: 40px;padding-top: 20px;float: right; text-align:right; padding-right: 13px;}
+#back-top{display:block; float: right; height:30px; width: 30px;  border-radius: 23px;
+background:rgba(0, 0, 0, 0.31) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkZFOEY1OTAwRTEzNjExRTRBRENCQTJDQjU5OUFGNDY4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkZFOEY1OTAxRTEzNjExRTRBRENCQTJDQjU5OUFGNDY4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RkU4RjU4RkVFMTM2MTFFNEFEQ0JBMkNCNTk5QUY0NjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RkU4RjU4RkZFMTM2MTFFNEFEQ0JBMkNCNTk5QUY0NjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7sv7SVAAAAvklEQVR42myQQQrCMBBFM2mMVYtVF1aoK4XuhN5DT+UJK17BhRUEhWJQsPEHGokxs5nMDG/+nzAWCK01G6c5xfEsCc15CDDRPMpW9gfC1m6QD6STJRnA9pJhtbjfTjUR/SvBSmQV3EWoz1g0wpx+IDS4Utd3JHfaUdg7YAOrG2uVOqD1gBKWDgGrGfoXjg3aA4rXUx3NDcgC9dpRrLFobqwJfG/Ge1uNXBjlwPfLbr763mYeaOQ+4IFTO/8IMACY51cbbdgIHwAAAABJRU5ErkJggg==") no-repeat scroll center center;
+opacity:0.3;bottom: 85px;position: fixed;right: 50px;-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+#back-top:hover{opacity:1;}
+.line_f { width: 100%; height:4px; background-color: #333;}
+.footer_year { background-color: #fff;border: 1px solid #B5B2B2;border-radius: 5px;color: #9f9f9f;font-size: 11px;min-height: 20px;padding: 13px;width: 95%;margin:3px auto 0;}
+.divider_footer { width: 100%; display: block; position: absolute; height: 2px; background-color: #af8d38; top: 0;}
+.barra_fundo{  clear: both;height: 15px;margin: 0 auto;width: 98%;}
+.icons{color: #fff;font-size: 20px;padding: 5px;position: relative;text-align: center;}
+.icons:hover {text-decoration: none;}
+.icons > .btn-group { position: absolute; right: 0; top: -50px;}
+
+/*CAIXAS FOOTER */
+.custom.mensagem { font-size:12px;color: #af8d38;line-height:12px; width:220px!important;}
+.mensagem h1,
+.mensagem h3,
+.mensagem h4 {font-size: 13px; color: #af8d38;line-height:14px;margin-top:0!important;margin-bottom: 12px;}
+.logos-cof {width: 100%; text-align: left;}
+
+/*AJUSTES*/
+.pager.pagenav li.previous, 
+.pager.pagenav li.next { font-size: 10px;}
+.bloco-central .system-message-container {text-align: right;}
+
+/*CONTACTOS*/
+.formulario { margin-bottom:30px; width: 100%;}
+.formulario .contactos-centerbody {max-width:860px; margin: 0 auto;}
+.formulario .contactos_left{ float: right; width:40%;margin-left: 40px;}
+.formulario .contactos_right{float: left; width:52%;margin-right: 2%;}
+.formulario .mapa { width:100%;clear: both;margin-bottom: 30px;}
+.formulario .contactos_left .mais_info {margin-top: 50px;width: 80%;}
+.formulario .contactos_left .mais_info .dl-horizontal > dt { display:none;}
+.formulario .contactos_left .dl-horizontal dd {margin-left: 0;}
+.formulario .contactos_left .mais_info .dl-horizontal dd p,
+.formulario .contactos_left .mais_info .dl-horizontal dd span { font-size: 12px;}
+.formulario .contactos_left dl.contact-address {font-size:12px;}
+.formulario .contactos_left dl.contact-address > dt {clear: both;text-align: left; margin-top: 11px;width: 100% !important;}
+.formulario .contactos_right #contact-form {position: relative;}
+.formulario .contactos_right #contact-form > fieldset > legend{  font-size: 12px !important;line-height: 12px;margin: 0;padding-bottom: 20px;}
+.formulario .contactos_right #contact-form .form-actions  { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border:none; padding:0; margin:0;bottom: 20px;position: absolute;right: -10px;}	
+.formulario .contactos_right #contact-form .form-actions .btn-primary{
+background-color: #a8a6a6;
+border: 1px solid #ccc;
+border-radius: 6px;
+color: #fff;
+display: block;
+font-size: 12px;
+line-height: 23px;
+padding: 6px;
+text-align: center;
+text-shadow: none;
+width: 140px;
+-moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s;
+}
+.formulario .contactos_right #contact-form .form-actions .btn-primary:hover {border: 1px solid #ccc;color: #333;background-color: #ccc;}
+.formulario .form-horizontal .control-label {text-align: left;}
+.formulario .form-horizontal .controls {display: inline-block;margin-left: 0;padding-left: 0;width: 100%;}
+.formulario .control-group.copia {width: 37%; clear: both;}
+.formulario .control-group.copia .control-label { width: 130px;}
+.formulario .control-group.copia .controls { width: 30px;}
+.banner-contactos {max-width: 980px; margin:0 auto;}
+.layout-dp_templatecontacto .page-header h2{margin:0;}
+.layout-dp_templatecontacto .page-header h2 .contact-name {text-transform: none;}
+.layout-dp_templatecontacto .page-header h3 {margin-bottom: 5px; margin-top: 35px;}
+.layout-dp_templatecontacto .page-header h3 .contact-category {text-transform: uppercase;font-size: 14px;}
+.mais_info h3{text-transform: uppercase;}
+.formulario dt > .jicons-text {text-transform: uppercase; font-size: 18px;margin-top: 10px;margin-bottom: 7px;display:block;}
+.layout-dp_templatecontacto .full-width-banner,
+.banner-contactos .slider_conteudos #slider,
+.banner-contactos .slider_conteudos #slider li, 
+.banner-contactos .slider_conteudos {height: 320px;}
+
+
+/*PAGINA DE PESQUISA*/
+.search #searchForm{position: relative;}
+.search #searchForm .form-limit {bottom: 0;display: block;height: 50px;position: absolute;right: -15px;width: 70px;}
+.search #searchForm .phrases legend {margin-bottom: 2px!important;}
+#searchphraseall-lbl,
+#searchphraseany-lbl,
+#searchphraseexact-lbl { display: inline-block;}
+.search #searchForm .phrases-box {margin-bottom: 30px;}
+button.btn, input.btn[type="submit"] {padding-bottom: 9px!important;padding-top: 8px!important;}
+
+/*OPCOES*/
+
+.small .opcoes,
+.mobile .opcoes {display: block;
+float: right;
+height: 20px;
+margin-right: 0;
+margin-top: 5px;
+padding-bottom: 7px;
+min-width: 60px;
+position: relative;
+width: 100%;}
+.opcoes { display: block;float: right;height: 20px;margin-right: 10px;margin-top:38px;position: relative;min-width: 60px;}
+.opcoes .moduletable.bandeiras {display: block;height: 20px;margin: 0 auto;min-width: 60px;}
+.opcoes .moduletable.bandeiras > .mod-languages {display: block;float: right;height: 20px;width: 60px;}
+
+.mobile .opcoes .moduletable.bandeiras > .mod-languages,
+.small .opcoes .moduletable.bandeiras > .mod-languages {width: 100%;}
+
+.mobile .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li,
+.small .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li{width: 42%; float: left;}
+
+.mobile .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li a,
+.small .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li a { display: block; width: 100%; height: 100%;}
+
+.mobile .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li a img,
+.small .opcoes .moduletable.bandeiras > .mod-languages .lang-inline li a img { display: block; margin: 0 auto;width: 32%;}
+
+.normal .opcoes { margin-top: 27px;}
+.moduletable.pesq {margin-top: 17px; padding-left: 0;}
+.moduletable.pesq button.btn-primary{ background: rgba(0, 0, 0, 0) url("../images/button-pesq.png") no-repeat scroll left top;display: block;float: right;height: 22px;overflow: hidden;position: absolute;right: 3px;text-indent: -10000px;top: 4px;width: 22px;}
+.search.pesq input[type="search"] {border-color: #adadad;border-radius: 4px;color: #333;font-size: 12px;height: 22px;padding: 3px 5px;width: 94%;}
+.search.pesq  input[type="search"]:focus {border-color: rgba(0, 48, 92, 0.38);box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(105, 105, 105, 0.6);}
+.navigation {border-top: none!important;}
+.logos_assoc { display:table; text-align: center;width: 100%;}
+.logos_assoc div {margin-left: 15px; margin-right:15px;} 
+
+/*.tabs_area .tab > .moduletable,*/
+.footer .social_area { position: relative;  bottom: -35px; }
+.footer .social_area img {opacity: 0.5;  max-width: 110px; height: auto; margin-left: 10px; margin-right: 10px; display: inline-block;}	 
+.small .footer .social_area { position: relative; margin:0 auto; width:85%; clear: both;  }	 
+.divider {display: block; clear: both; width: 100%;}
+
+/*Menu Mobile*/
+.nav-collapse, .nav-collapse.collapse {min-height: 220px;overflow: hidden;position: absolute;right: 0;top: 40px;}
+.navbar .btn-navbar {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;border: medium none;box-shadow: none;}
+.navbar .btn-navbar:hover, 
+.navbar .btn-navbar:focus, 
+.navbar .btn-navbar:active, 
+.navbar .btn-navbar.active, 
+.navbar .btn-navbar.disabled, 
+.navbar .btn-navbar[disabled] {background-color: none!important;color: #fff;}
+.navbar .btn-navbar > .icon-bar{background-color: #af8d38; box-shadow:none;height:4px ; width:33px;margin-top: 5px;}
+
+/****   RESPONSIVE     ***/
+.mobile .footer #tab1 {float: none;min-height: 230px;padding-top: 10px;width: 97%; clear: both;}
+.mobile .footer #tab2 {float: none;left: 0;margin: auto;position: relative;right: 0;width: 72%; clear: both;}
+
+.big.homepage .full-width-banner .slide-desc .slide-text {font-size: 55px; line-height:55px;}
+.big.homepage .full-width-banner .slide-desc {top: 50%; width: 50%; height: auto;}
+.normal .artigo.item-page.adega .text-area .intro-area {padding: 32% 0 4%;}
+.normal .artigo.item-page.adega .text-area {padding-bottom: 3%;}
+.normal .vinhas.blog .vinhas-container .intro-texto { height: 320px;padding-bottom: 28%;}
+.normal .homepage .full-width-banner .slide-desc {width: 70%;}
+.small .artigo.not-page{width: 94%;}
+.small .artigo.not-page .pager.pagenav { width:99%;}
+.small .artigo.item-page.adega .text-area .intro-area .intro-corpo {width: 90%;}
+.mobile .conteudos .artigo.base h1,
+.mobile .noticias-listagem.blog .artigos_list .destaque .page-header h2 a,
+.mobile .conteudos .bloco-central #content .page-header h2,
+.mobile .conteudos .bloco-central #content .page-header h2 a,
+.mobile .conteudos .bloco-central .artigo .page-header h1, 
+.mobile .conteudos .bloco-central .artigo .page-header h1 a { font-size: 23px!important;line-height: 23px!important; }
+.small .footer .copyright-text {color: #fff;float: right;height: 40px;margin-right: 20px;padding-top: 30px;text-align: right;}
+.mobile .footer .social_area .moduletable .custom > div > img{max-width:80px;height: auto;}
+.small .artigo.item-page.historia,
+.mobile .artigo.item-page.historia { width:100%!important;}
+.mobile .moduletable .menu-left {display: none;}
+.mobile.conteudos .blogq_somos .items-leading > div {margin-bottom: 25px;}
+.mobile.conteudos .blogq_somos .items-leading > .leading-2{ padding-top: 15px;margin-bottom: 40px;}
+.mobile.conteudos .bloco-central #content .page-header h2 { font-size: 23px;}
+.mobile.conteudos .blogq_somos {width:94%; margin: 0 auto;}
+.mobile.conteudos .blogq_somos .texto_principal {font-size: 15px;vertical-align: bottom;float: none!important; clear: both;display:table-cell; width: 99%!important; margin: 0 auto!important;}
+.mobile.conteudos .blogq_somos .caixa_slogan {vertical-align:top; float: none!important;  padding-bottom: 40px;clear: both;display: table-caption; width: 99%!important; margin: 0 auto!important;}
+.mobile.conteudos .full-header #logo { background-size:80%;}
+.mobile.conteudos .full-width-banner, 
+.mobile.conteudos .slider_conteudos #slider, 
+.mobile.conteudos .slider_conteudos { height: 190px;}
+.mobile .caixa-area {
+-moz-border-bottom-colors: none !important;
+-moz-border-left-colors: none !important;
+-moz-border-right-colors: none !important;
+-moz-border-top-colors: none !important;
+border-bottom: 1px solid #eee;
+-moz-border-image: none !important;
+-o-border-image: none !important;
+-webkit-border-image: none !important;
+border-image: none !important;
+border-left: medium none !important;
+border-right: medium none !important;
+border-top: medium none !important;
+margin-bottom: 20px;
+margin-left: auto !important;
+margin-right: auto !important;
+margin-top: 0 !important;
+padding-bottom: 40px;
+width: 93% !important;}
+.normal .logoheader .logo-png {max-width: 307px !important;}
+.normal .menu_principal {width: 69%;}
+.normal .moduletable_menu_hor { margin-top: 22px;width: 87.5%;}
+.small .vinho-show .right-block {width: 59%;padding-right: 4%;}
+.mobile.conteudos .bloco-central .artigo.vinho-show {padding-top: 5px;padding-bottom: 20px;}
+.mobile .vinho-show .left-block .image-block .imagem .img-holder-img {display: block;float: none;margin: 0 auto;max-height: 395px;}
+.mobile .vinho-show .bottom-block {text-align: center; padding-bottom: 15px;padding-top: 20px;}
+.mobile .vinho-show .bottom-block .partilhas { clear: both;display: block;float: none;margin: 20px auto 0;max-width: 250px;text-align: center;width: auto;}
+.mobile .conteudos .bloco-central .artigo.vinho-show .right-block .page-header h1 { font-size: 25px;width: 100%;}
+.mobile .vinho-show .right-block {padding-left: 35px;padding-right: 4%;min-height: 450px;width: 58%;}
+.mobile .vinho-show .right-block .navegacao {position:relative!important; top: 0 ;  }
+.mobile .vinho-show .right-block,
+.mobile .vinho-show .left-block { width:98%; float: none; margin: 0 auto; padding:0;}
+.mobile .vinho-show .right-block .details-list > div { margin-bottom: 10px;}
+.mobile .vinho-show .right-block .details-list > div > .title { clear: both;display: block;font-size: 14px;font-weight: bold;width: 100%;text-align: center;text-transform: uppercase;}
+.mobile .vinho-show .right-block .details-list > div > .value {max-width: 100%; clear: both;display: block;font-size: 14px;line-height: 18px;width: 100%;text-align: center;margin:0;}
+.mobile.conteudos .bloco-central .artigo.vinho-show .right-block .intro-text { width:96%; margin:0 auto;font-size: 15px; text-align: center; line-height: 19px;}
+.mobile.conteudos .bloco-central .artigo.vinho-show .right-block .details-list { width:92%;  margin: 0 auto;}
+.mobile .vinho-show .inner-vinho .navegacao { top: 17%;}
+.mobile .vinho-show .left-block .image-block .medalhas {bottom: 0;position: absolute;right: 40px;}
+.mobile .vinho-show .left-block .image-block .medalhas img { max-width: 110px;}
+.mobile .navegacao-mobile { display: block;}
+.mobile .navegacao-mobile a{  border: 2px solid #af8d38;border-radius: 5px;font-size: 11px;margin-left: 10px;padding: 4px 10px;
+-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+.mobile .categorys-link ul li {display: inline-block !important;margin: 0 4% !important;position: relative;width: auto !important;}
+.mobile .navegacao-mobile a:hover {border: 2px solid #af8d38;background-color: #af8d38; text-decoration: none; color: #fff;}
+.mobile .conteudo.container .caixa-area ul li {font-size: 17px!important;}
+.mobile .conteudo.container .caixa-area h3 {font-size: 23px;line-height:30px;padding-bottom: 10px;padding-top: 10px;}
+.mobile .caixa-area > .sprite {-moz-transform: scale(1.10); -ms-transform: scale(1.10); -o-transform: scale(1.10); -webkit-transform: scale(1.10); transform: scale(1.10);}
+.mobile .conteudo.container .divider {display: none;}
+.mobile .conteudo.container .descritivo {height: auto;}
+.mobile .conteudo.container .descritivo ul li { line-height: 22px; float: none; margin-bottom: 2px; font-size: 14px; width: 96%; margin-left: 4%;   }
+.mobile #back-top {right:15px; bottom: 55px;}
+.mobile.conteudos #toogle-footer {left:10px;}
+.mobile .full-header { height: 60px;}
+.mobile .full-header .logoheader {width:80%; height:auto;}
+.mobile .full-header .logoheader .logo-png {width: 100%;height:auto;max-width: 285px;} 
+.mobile .full-header .logoheader #logo {width: 80%;height:75px;}
+.mobile.homepage .full-width-banner #navegacao {bottom: 0;top: 155%;}
+.mobile.homepage .full-width-banner,
+.mobile.homepage .full-width-banner #slider .bx-wrapper, 
+.mobile.homepage .full-width-banner #slider,
+.mobile.homepage .full-width-banner .wrapper-slide, 
+.mobile.homepage .full-width-banner #slider li.slider-item{background-position: center center;background-size: cover;padding-bottom: 70%;}
+.mobile.homepage .full-width-banner .slide-desc { display: block;margin:auto;text-align: center;width: 89%; height: 115px;top:20%; bottom: 0;}
+.mobile.homepage .full-width-banner .slide-desc .slide-text img { width:50%; height: auto;}
+.mobile.homepage .full-width-banner .setas-area .seta-prev{ left: 1%;}
+.mobile.homepage .full-width-banner .setas-area .seta-next .bx-next {-moz-transform:scale(0.7); -ms-transform:scale(0.7); -o-transform:scale(0.7); -webkit-transform:scale(0.7); transform:scale(0.7); }
+.mobile.homepage .full-width-banner .setas-area .seta-prev .bx-prev {-moz-transform:scale(0.7); -ms-transform:scale(0.7); -o-transform:scale(0.7); -webkit-transform:scale(0.7); transform:scale(0.7); }
+.mobile.homepage .full-width-banner .setas-area .seta-next{right: 1%;}
+.mobile.homepage .full-width-banner #navegacao .bx-pager .bx-pager-item {  margin-left: 0;margin-right: 0;}
+.mobile.homepage .full-width-banner .slide-desc .slide-title {font-size: 35px;line-height: 37px;}
+.mobile.homepage .full-width-banner .slide-desc .slide-text { font-size: 30px; line-height: 31px;margin: 0 auto;width: 90%;}
+.mobile.homepage .full-width-banner #navegacao .bx-pager .bx-pager-item .bx-pager-link { transform:scale(0.7);}
+.mobile .destk-mod ul.destaques-homepage li .destaques-inner {padding-bottom:70%;}
+.mobile .destk-mod ul.destaques-homepage li,
+.small .destk-mod ul.destaques-homepage li { float: left;  width: 50%;display:block;  height:0; padding-bottom:34%;}
+.mobile .destk-mod ul.destaques-homepage li .destaques-inner .texto-area {height: 41%;width: 90%;}
+.mobile .destk-mod ul.destaques-homepage li .destaques-inner .texto-area h4 {font-size: 18px;line-height:18px; }
+.mobile .footer { height: auto;}
+.mobile .footer menu-footer .nav.menu li {text-align:center;}
+.mobile .footer .menu-footer { float: left;margin-left: 5% !important;width: 27% !important;}
+.mobile .logo-footer {display: block; width:100%;min-height: 40px!important;margin-top: 20px;}
+.mobile .logo-footer > img {max-width:100%;  margin:0 auto;display: block; }
+.mobile .footer #tab1 .menu_footer_area { padding-left:0;}
+.mobile .menu-footer .nav.menu { height: 18px;margin: 0;width: 100%;}
+.small .artigo.item-page.historia .text-area .intro-area .img-intro ,
+.mobile .artigo.item-page.historia .text-area .intro-area .img-intro { float: none; width: 98%; margin: 0 auto; display: block;}
+.small .artigo.not-page div[itemprop="articleBody"] {width: 45%;}
+.small .artigo.not-page .pager.pagenav {top: auto;bottom: 10%;}
+.small .artigo.item-page.adega .full-area { max-width: 85%;}
+.small .galeria .setas-area {display: block;left: 0;margin: auto;position: absolute;right: 0;top: 30%;width: 90%;}
+.small .galeria .gal-port {height: 0;margin: 0 auto;max-width: 940px;padding-bottom: 60%;width: 96%;}
+.small .galeria #gal-thumbs li { height: 50px; width:85px;}
+.small .artigo.item-page.vinhas-show .text-area .intro-area h2 {line-height: 31px;font-size: 30px;}
+.mobile .artigo.item-page.vinhas-show .text-area .intro-area h2 {line-height: 26px;font-size: 26px;}
+.mobile .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text { font-size: 14px;line-height: 18px;}
+.mobile .artigo.item-page.vinhas-show .full-area {max-width: 94%;}
+.small .artigo.item-page.vinhas-show .full-area {max-width: 90%;}
+.mobile .artigo.item-page.vinhas-show .text-area { max-width: 89%;}
+.small .artigo.item-page.historia .text-area .intro-area .img-intro img.assinatura {max-width: 210px; }
+.mobile .artigo.item-page.historia .text-area .intro-area .img-intro img.assinatura{max-width: 210px;}
+.mobile .artigo.item-page.historia .text-area .intro-area .intro-corpo .intro-texto {font-size: 14px;line-height: 20px;width: 88%;}
+.small .artigo.item-page.historia .text-area .intro-area .img-intro img { display: block; margin: 0 auto;max-width: 440px;} 
+.mobile .artigo.item-page.historia .text-area .intro-area .img-intro img { display: block; margin: 0 auto; max-width: 440px; width: 100%;}
+.mobile .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc {min-height: 65px;}
+.small .artigo.item-page.historia .text-area .intro-area .intro-corpo, 
+.mobile .artigo.item-page.historia .text-area .intro-area .intro-corpo { float: none; width:98%; margin: 0 auto; display: block;}
+.mobile .artigo.item-page.historia .full-area .galeria {max-width:98%; min-height: 260px;}
+.small .artigo.item-page.historia .full-area .galeria {max-width:85%; }
+.mobile .galeria #gal-thumbs li { height:45px; width:45px;}
+.mobile .galeria .setas-area {position: absolute;top: 30%;width: 80%;z-index:51; display:block; left: 0; right: 0; margin: auto;}
+.mobile .galeria .setas-area .seta-prev{ height: 51px; left: -10%;position: absolute;}
+.mobile .galeria .setas-area .seta-next{ height: 51px;right: -10%;position: absolute;}
+.mobile .artigo.item-page.adega .full-area{max-width: 96%;}
+.mobile .galeria .gal-port .slider_conteudos, 
+.mobile .galeria .gal-port .slider_conteudos #slider .slider-item,
+.mobile .galeria .gal-port .slider_conteudos #slider {height:auto; height: 850px;}
+.mobile .galeria .setas-area { top: 20%;}
+.djslider-loader-default {background:none!important;}
+
+/****** SPRITE ********/
+.sprite { background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll 0 0; }
+#osmap {max-width:960px;margin:0 auto;padding-top:80px;}
+#osmap h2 { color: #af8d38; width: 90%; padding-bottom: 20px;font-family: "Roboto Condensed",sans-serif;font-size: 21px;font-weight: 700;margin: 0 auto;line-height: 28px;text-transform: uppercase;}
+#osmap ul.level_0 { float: left; width: 45%; margin-left: 5%; padding-bottom:80px;}
+#osmap h1 {color: #666;font-size: 26px;font-weight: 700;line-height: 28px;text-transform: uppercase;}
+
+.mobile #osmap h2{text-align: center;width: 100%;}
+.mobile #osmap {padding-top: 20px;}
+.developer:hover, .developer:visited {text-decoration:none; color:#af8d38;}
+.mobile .noticias-listagem.blog .artigos_list .listagem .item-noticia .item-content-texto,
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .texto,
+.mobile .noticias-listagem.blog .artigos_list .listagem .item-noticia .imagem-item,
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .imagem-destaque { width:98%; margin: 0 auto; float:none; clear: both; display: block;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .texto{ width:90%;}
+.mobile .noticias-listagem.blog .intro-texto {padding-top: 15px; padding-bottom: 10%; width: 96%;}
+.mobile .noticias-listagem.blog .artigos_list .listagem .page-header h2 a{font-size: 20px !important;line-height: 23px!important;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .page-header h2,
+.mobile .noticias-listagem.blog .artigos_list .listagem .page-header h2 {padding-bottom: 5px;padding-top: 15px;text-align: center;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .article-info > dd {padding:0; margin:0;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .item-destaque .article-info {text-align: center;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .txt-intro { padding-bottom: 5px;padding-top: 5px; font-size: 15px; line-height: 22px; max-width: 450px; margin: 0 auto;}
+.mobile .noticias-listagem.blog .artigos_list .destaque .txt-intro p{ margin: 0 0 1px; }
+.mobile .noticias-listagem.blog .artigos_list .item-noticia p {font-size: 13px;line-height: 20px;}
+.mobile .noticias-listagem.blog .artigos_list .destaque {padding-bottom: 20px;}
+.mobile .noticias-listagem.blog .artigos_list .listagem .item-noticia .imagem-item img.img-holder-img{max-height: 140px;}
+.mobile .noticias-listagem.blog .intro-texto .category-desc h2 {font-size: 23px;line-height: 23px;}
+.mobile .artigo.not-page {padding-top:25px;}
+.mobile .artigo.not-page .article-info.muted dl.article-info { padding:0; margin:0;}
+.mobile .artigo.not-page .article-info.muted dl.article-info dd {display: block;font-size: 9px;margin: 0 auto;text-align: center;}
+.mobile .noticias-listagem.blog .btn-mais{ max-width: 450px!important; margin: 0 auto;}
+.mobile .artigo.not-page > .article-info {margin-bottom:20px;}
+.mobile .artigo.not-page .page-header h2,
+.mobile .artigo.not-page .page-header h1 {font-size: 20px; line-height: 24px;margin: 5px 0;padding: 0;}
+.mobile .artigo.not-page{padding-top: 25px}
+.mobile .artigo.not-page .pager.pagenav {top: 13.2%;}
+.small .vinhos .category-desc {max-width: 94%!important;}
+.mobile.conteudos .vinhas.blog .category-desc h2, 
+.mobile.conteudos .vinhas.blog .category-desc h2 strong{line-height: 26px; font-size: 26px;}
+.mobile .artigo.not-page .item-image { width:96%; float:none!important; clear: both;margin:0 auto;}
+.mobile .artigo.not-page div[itemprop="articleBody"] {width:85%; float:none!important; clear: both;margin:0 auto;}
+.mobile .artigo.not-page .page-header {margin: 0 auto;text-align: center;width: 96%;}
+.mobile .artigo.not-page .page-header h2 a {font-size: 31px !important;}
+.mobile .artigo.not-page div[itemprop="articleBody"] > p {font-size: 14px;line-height: 22px; }
+.mobile .footer .copyright-text {font-size: 12px;line-height: 16px;margin: 0 auto;padding-top: 5px;position: relative;right: auto; width: 100%;text-align: center;}
+.mobile .footer .footer-inner .tabs_area { padding-bottom:20px;}
+.small.conteudos .bloco-central .artigo.enoturismo .text-area {padding-bottom: 29%; min-height: 450px; }
+.small.conteudos .bloco-central .artigo.enoturismo,
+.normal.conteudos .bloco-central .artigo.enoturismo,
+.small.conteudos .bloco-central .artigo.adega,
+.normal.conteudos .bloco-central .artigo.adega { width: 100%;}
+.mobile .vinhas.blog .vinhas-container .intro-texto{width:90%;height: 210px; }
+.mobile .artigo.item-page.enoturismo .galeria {top: 0;}
+.mobile .vinho-show .right-block .page-header { width:90%; margin:0 auto;margin-bottom: 20px !important;padding-bottom: 10px;}
+.mobile .vinhas.blog .category-desc p,
+.mobile .artigo.item-page.adega .text-area .intro-area .intro-corpo .intro-texto p {  font-size: 14px;line-height: 20px;}
+.mobile .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .page-header h1 {margin: 0; padding: 0;  text-shadow: 0 1px 1px #333;}
+.mobile .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo { float: none; width: 90%; margin: 0 auto;padding: 8% 0 0;}
+.normal .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo { width: 52%; padding-left: 10%;}
+.mobile .artigo.item-page.enoturismo .text-area {padding-bottom: 2%; margin-bottom: 20px;}
+.small .formulario .contactos_left,
+.mobile .formulario .contactos_left,
+.small .formulario .contactos_right,
+.mobile .formulario .contactos_right { float: none;width: 92%; margin:0 auto;}
+.mobile .galeria { max-height: 850px;}
+.mobile .artigo.item-page.adega .text-area .intro-area .intro-corpo {width: 94%;}
+.mobile .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo .intro-texto h2 { color: #fff;text-shadow: 1px 2px 1px #000;}
+.mobile .artigo.item-page.enoturismo .full-area { height: auto;max-width: 96%;}
+.mobile .artigo.item-page.enoturismo .galeria .gal-port .slider_conteudos #slider .slider-item .slide-desc .slide-text { font-size: 14px; line-height: 18px;}
+.mobile .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo p{ padding-bottom: 30px; font-size: 14px; line-height: 18px;text-shadow: 1px 2px 3px #fff;color: #000;
+ background-size: contain;}
+ 
+ 
+ .mobile .vinhas.blog .vinhas-container,
+ .mobile .artigo.item-page.adega .text-area { background-size: contain; background-repeat: no-repeat;}
+ 
+ .mobile .layout-dp_templatevinhas .centro {background-color: #1a1617;} 
+ 
+.mobile .artigo.item-page.enoturismo .galeria .setas-area .seta-next .bx-next {background: rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -38px -85px;}
+.mobile .artigo.item-page.enoturismo .galeria .setas-area .seta-prev .bx-prev { background:rgba(0, 0, 0, 0) url("../images/sprite.png") no-repeat scroll -6px -85px;}
+.mobile .artigo.item-page.historia .text-area .intro-area .intro-corpo h2,
+.mobile .artigo.item-page.adega .text-area .intro-area .intro-corpo h2 { font-size: 27px;line-height: 27px;}
+.mobile .artigo.item-page.enoturismo .text-area .intro-area .intro-corpo h2 { font-size: 23px;line-height: 24px;}
+
+.mobile .noticias-listagem.blog .intro-texto h1 { font-size: 21px;margin-bottom: 0;}
+
+@media screen and (max-width: 480px) {
+ .galeria,
+ .galeria .gal-port .slider_conteudos, 
+ .galeria .gal-port .slider_conteudos #slider .slider-item,
+ .galeria .gal-port .slider_conteudos #slider { height: 460px;min-height: auto;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+ .galeria,
+ .galeria .gal-port .slider_conteudos, 
+ .galeria .gal-port .slider_conteudos #slider .slider-item,
+ .galeria .gal-port .slider_conteudos #slider { height: 520px;min-height: auto;}
+}
