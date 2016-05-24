@@ -7,6 +7,7 @@ Major Features
 - Bootstrap UI Framework;
 - 960 and full width Grid template;
 - Open Graph ready;
+- Favicon icon set;
 - Custom template overrides in Categories/article listings in blog view;
 - Templates overrides for Portfolio and normal product listing;
 - Custom layouts for one-article-pages, like "About Us" and "History" corporate designs;
